@@ -14,9 +14,7 @@ const ResultadoPokemon = () => {
         </div>
       )}
 
-      {buscador.error === "" ? null : (
-        <span className="text-danger">{buscador.error}</span>
-      )}
+      {buscador.error !== "" && <span className="text-danger">{buscador.error}</span> }
     </div>
   );
 };
